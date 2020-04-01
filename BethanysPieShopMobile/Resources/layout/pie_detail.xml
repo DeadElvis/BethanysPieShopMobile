@@ -4,22 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="20dp"
-    android:paddingRight="20dp">
+    android:paddingRight="20dp"
+    android:background="@drawable/patternwide">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal" 
+        android:id="@+id/pieImageView"
         android:contentDescription="@string/app_name"/>
     <TextView
         android:text="Pie Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pieNameTextView"
-        android:textColor="@android:color/black"
-        android:textSize="20dp"
+        style="@style/BethanysGreenText"
+        android:textSize="14dp"
         android:textStyle="bold" 
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         />
     <TextView
         android:text="Short Description"
@@ -27,30 +29,31 @@
         android:layout_height="wrap_content"
         android:id="@+id/shortDescriptionTextView"
         android:textColor="@android:color/black"
-        android:textSize="16dp"
-        android:paddingTop="20dp"/>
+        android:textSize="12dp"
+        android:paddingTop="10dp"/>
     <TextView
-        android:text="Pellentesque mollis imperdiet imperdiet. Duis eu varius ligula. Vestibulum vitae lorem non elit imperdiet viverra quis non ligula. Donec nec magna rutrum, malesuada nisl sed, vehicula nibh. Aliquam erat volutpat. Cras lobortis molestie mi id ultricies. Quisque mauris lorem, varius id accumsan a, molestie eu metus. Duis tincidunt magna eget enim placerat pulvinar. In aliquet diam justo, sit amet tempor lectus auctor nec. Etiam at suscipit neque."
+        android:text="Pellentesque mollis imperdiet imperdiet.  placerat pulvinar. In aliquet diam justo, sit amet tempor lectus auctor nec. Etiam at suscipit neque."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/descriptionTextView"
         android:editable="false"
         android:textColor="@android:color/black"
-        android:textSize="12dp"
-        android:paddingTop="20dp"/>
+        android:textSize="8dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="0.0dp" />
     <TextView
         android:text="Price: 10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/priceTextView"
         android:textColor="@android:color/black"
-        android:textSize="16dp"
-        android:paddingTop="20dp"
+        android:textSize="12dp"
+        android:paddingTop="10dp"
         android:textStyle="bold" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
-        android:minHeight="25px"
+        android:minHeight="20px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1" >
@@ -59,15 +62,15 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
-            android:textSize="16dp"
-            android:paddingTop="20dp"
+            android:textSize="12dp"
+            android:paddingTop="10dp"
             android:textStyle="bold"/>
         <EditText
             android:inputType="number"
             android:text="1"
             android:hint="1"
             android:layout_width="30dp"
-            android:layout_height="40dp"
+            android:layout_height="25dp"
             android:id="@+id/amountEditText"
             android:textColor="@android:color/black"
             android:background="@android:color/white"
@@ -82,6 +85,6 @@
         android:id="@+id/addToCartButton"
         android:backgroundTint="#23cfa7"
         android:width="200dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
